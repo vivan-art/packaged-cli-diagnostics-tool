@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "machine-diagnostics-cli"
+version = "1.0.0"
+description = "A distributable CLI for inspecting Python, disk space, environment variables, and developer tools."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{name = "Internship Submission"}]
+license = {text = "MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+machine-diagnostics = "diagnostics_cli.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
