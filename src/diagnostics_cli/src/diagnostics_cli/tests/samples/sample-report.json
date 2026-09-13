@@ -1,0 +1,56 @@
+{
+  "tool": "machine-diagnostics",
+  "version": "1.0.0",
+  "overall_status": "ok",
+  "python": {
+    "version": "3.12.x",
+    "executable": "/example/python",
+    "status": "ok"
+  },
+  "disk": {
+    "path": ".",
+    "total_bytes": 100000000000,
+    "used_bytes": 40000000000,
+    "free_bytes": 60000000000,
+    "free_percent": 60.0,
+    "status": "ok"
+  },
+  "environment": {
+    "variables": {
+      "PATH": "/example/path",
+      "VIRTUAL_ENV": "/example/.venv"
+    },
+    "status": "ok",
+    "note": "Only selected non-secret environment variables are reported."
+  },
+  "developer_tools": [
+    {
+      "tool": "git",
+      "installed": true,
+      "path": "/usr/bin/git",
+      "version": "git version 2.x",
+      "status": "ok"
+    },
+    {
+      "tool": "pip",
+      "installed": true,
+      "path": "/example/pip",
+      "version": "pip 24.x",
+      "status": "ok"
+    },
+    {
+      "tool": "python",
+      "installed": true,
+      "path": "/example/python",
+      "version": "Python 3.12.x",
+      "status": "ok"
+    },
+    {
+      "tool": "pytest",
+      "installed": true,
+      "path": "/example/pytest",
+      "version": "pytest 8.x",
+      "status": "ok"
+    }
+  ]
+}
